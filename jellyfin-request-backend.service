@@ -1,0 +1,11 @@
+[Unit]
+Description=Proxy to SendGrid
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/jellyfin-request-backend
+ExecStart=/opt/jellyfin-request-backend/start.sh
+User=alexis
+
+[Install]
+WantedBy=multi-user.target
